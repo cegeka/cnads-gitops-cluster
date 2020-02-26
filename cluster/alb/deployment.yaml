@@ -24,6 +24,8 @@ spec:
   template:
     metadata:
       creationTimestamp: null
+      annotations:
+        iam.amazonaws.com/role: arn:aws:iam::439016856740:role/k8s-alb-ingress-role
       labels:
         app: alb-ingress-controller
     spec:
